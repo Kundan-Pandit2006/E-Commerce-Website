@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>E-Commerce Website</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- Background -->
+    <div class="background">
+      <div class="blob blob1"></div>
+      <div class="blob blob2"></div>
+      <div class="blob blob3"></div>
+    </div>
+
+    <!-- Navbar -->
+    <header class="navbar">
+      <div class="logo">E-Commerce</div>
+
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Shop</a></li>
+        <li><a href="#">Collections</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <a href="#">Login</a>
+        <a href="#">Wishlist</a>
+        <a href="#">Cart (2)</a>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <main class="hero">
+      <div class="hero-content">
+        <h1>
+          Shop the <br />
+          <span>Latest Trends</span>
+        </h1>
+
+        <p>
+          Discover Your Style with Our New Arrivals. Elevate your daily look
+          with curated designer pieces.
+        </p>
+
+        <div class="buttons">
+          <button class="btn-primary">Shop Now</button>
+          <button class="btn-secondary">View Collections</button>
+        </div>
+      </div>
+
+      <div class="hero-image">
+        <img src="images/model.png" alt="Fashion Model" class="main-model" />
+
+        <img
+          src="images/sunglass.png"
+          alt="Sunglasses"
+          class="product sunglasses"
+        />
+        <img src="images/watch.png" alt="Watch" class="product watch" />
+        <img src="images/shoe.png" alt="Shoe" class="product shoe" />
+        <img src="images/bag.png" alt="Bag" class="product bag" />
+      </div>
+    </main>
+
+    <!-- Features -->
+    <section class="features">
+      <div class="feature">
+        <div class="icon-box">
+          <i data-lucide="truck"></i>
+        </div>
+        <h3>Free Shipping</h3>
+        <p>On Orders Over $50</p>
+      </div>
+
+      <div class="feature">
+        <div class="icon-box">
+          <i data-lucide="headphones"></i>
+        </div>
+        <h3>24/7 Support</h3>
+        <p>We're Here To Help</p>
+      </div>
+
+      <div class="feature">
+        <div class="icon-box">
+          <i data-lucide="shield-check"></i>
+        </div>
+        <h3>Secure Checkout</h3>
+        <p>Safe & Secure Payments</p>
+      </div>
+    </section>
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+      lucide.createIcons();
+    </script>
+  </body>
+</html>
