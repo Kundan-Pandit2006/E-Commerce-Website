@@ -1,15 +1,21 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Shop-E-Commerce</title>
-    <link rel="stylesheet" href="shopstyle.css">
+    <link rel="stylesheet" href="shopstyle.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
 </head>
+
 <body>
     <header>
         <nav class="navbar">
-            <h1>E-Commerce</h1>
+            <h1 class="logo">
+                <i class="fa-solid fa-bag-shopping"></i>
+                E-Commerce
+            </h1>
 
             <ul class="nav-links">
                 <li><a href="#">Home</a></li>
@@ -20,151 +26,290 @@
             </ul>
 
             <div class="nav-actions">
-                <a href="#">Login</a>
-                <a href="#">Wishlist</a>
-                <a href="#">Cart (0)</a>
+                <a href="#">
+                    <i class="fa-regular fa-user"></i>
+                    Login
+                </a>
+                <a href="#">
+                    <i class="fa-regular fa-heart"></i>
+                    Wishlist
+                </a>
+                <a href="#">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    Cart (0)
+                </a>
             </div>
         </nav>
     </header>
 
     <!-- Hero Banner -->
     <section class="hero">
-    
         <div class="hero-content">
             <h1>Shop Our Products</h1>
             <p>Home > Shop</p>
         </div>
-    
+
         <div class="hero-image">
-    
-            <img src="images/model.png" class="model" alt="Model">
-            <img src="images/sunglass.png" class="glass" alt="Glasses">
-            <img src="images/watch.png" class="watch" alt="Watch">
-            <img src="images/shoe.png" class="shoe" alt="Shoes">
-            <img src="images/bag.png" class="bag" alt="Bag">
-    
+            <img src="images/model.png" class="model" alt="Model" />
+            <img src="images/sunglass.png" class="glass" alt="Glasses" />
+            <img src="images/watch.png" class="watch" alt="Watch" />
+            <img src="images/shoe.png" class="shoe" alt="Shoes" />
+            <img src="images/bag.png" class="bag" alt="Bag" />
         </div>
-    
     </section>
-    
+
     <!-- Shop Section -->
     <section class="shop-container">
-    
         <!-- Sidebar -->
         <aside class="sidebar">
-    
             <div class="filter-box">
                 <h3>Search</h3>
-                <input type="text" placeholder="Search products">
+            
+                <div class="search-box">
+                    <input type="text" placeholder="Search for products...">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+            
             </div>
-    
+
             <div class="filter-box">
                 <h3>Categories</h3>
-    
                 <ul>
-                    <li>Shoes</li>
-                    <li>Watches</li>
-                    <li>Bags</li>
-                    <li>Clothing</li>
+                    <li class="active-category">
+                        <span>
+                            <i class="fa-solid fa-border-all"></i>
+                            All Categories
+                        </span>
+                        <span>(24)</span>
+                    </li>
+                    <li>
+                        <span>
+                            <i class="fa-solid fa-shoe-prints"></i>
+                            Shoes
+                        </span>
+                        <span>(6)</span>
+                    </li>
+                    <li>
+                        <span>
+                            <i class="fa-solid fa-clock"></i>
+                            Watches
+                        </span>
+                        <span>(6)</span>
+                    </li>
+                    <li>
+                        <span>
+                            <i class="fa-solid fa-bag-shopping"></i>
+                            Bags
+                        </span>
+                        <span>(6)</span>
+                    </li>
+                    <li>
+                        <span>
+                            <i class="fa-solid fa-shirt"></i>
+                            Clothing
+                        </span>
+
+                        <span>(6)</span>
+                    </li>
                 </ul>
             </div>
-    
+
             <div class="filter-box">
                 <h3>Price Range</h3>
-    
-                <label><input type="radio"> ₹0 - ₹1000</label>
-                <label><input type="radio"> ₹1000 - ₹3000</label>
-                <label><input type="radio"> ₹3000+</label>
+                <label>
+                    <input type="radio" checked>
+                    All Price
+                </label>
+                <label>
+                    <input type="radio">
+                    ₹0 - ₹1000
+                </label>
+                <label>
+                    <input type="radio">
+                    ₹1000 - ₹3000
+                </label>
+                <label>
+                    <input type="radio">
+                    ₹3000 - ₹5000
+                </label>  
+                <label>
+                    <input type="radio">
+                    ₹5000+
+                </label>
             </div>
-    
+
+            <div class="filter-box">
+
+                <h3>
+                    <!-- <i class="fa-solid fa-star"></i> -->
+                    Rating
+                </h3>
+
+                <label>
+                    <input type="checkbox">
+                    ⭐⭐⭐⭐⭐ <span>(120)</span>
+                </label>
+
+                <label>
+                    <input type="checkbox">
+                    ⭐⭐⭐⭐☆ <span>(95)</span>
+                </label>
+
+                <label>
+                    <input type="checkbox">
+                    ⭐⭐⭐☆☆ <span>(70)</span>
+                </label>
+
+                <label>
+                    <input type="checkbox">
+                    ⭐⭐☆☆☆ <span>(35)</span>
+                </label>
+
+            </div>
         </aside>
-    
+
         <!-- Products Section -->
         <div class="products-section">
-    
             <div class="products-header">
-    
-                <h3>Showing 1–8 of 8 Results</h3>
-    
+
+                <h3>Showing 1–11 of 12 Results</h3>
+
                 <select>
                     <option>Popularity</option>
                     <option>Price Low To High</option>
                     <option>Price High To Low</option>
                 </select>
-    
+
             </div>
-    
+
             <div class="products">
-    
                 <div class="product-card">
-                    <img src="images/product1.jpg" alt="">
+                    <img src="images/product1.jpg" alt="" />
                     <div class="rating">⭐⭐⭐⭐⭐ (120)</div>
                     <h3>Nike Shoes</h3>
                     <p>₹2999</p>
-                    <button>Add To Cart</button>
+                    <button>
+                        <i class="fa-solid fa-cart-plus"></i>
+                        Add To Cart
+                    </button>
                 </div>
-    
+
                 <div class="product-card">
-                    <img src="images/product2.jpg" alt="">
+                    <img src="images/product2.jpg" alt="" />
                     <div class="rating">⭐⭐⭐⭐⭐ (95)</div>
                     <h3>Smart Watch</h3>
                     <p>₹4999</p>
-                    <button>Add To Cart</button>
+                    <button>
+                        <i class="fa-solid fa-cart-plus"></i>
+                        Add To Cart
+                    </button>
                 </div>
-    
+
                 <div class="product-card">
-                    <img src="images/product3.jpg" alt="">
+                    <img src="images/product3.jpg" alt="" />
                     <div class="rating">⭐⭐⭐⭐⭐ (150)</div>
                     <h3>Leather Bag</h3>
                     <p>₹1999</p>
-                    <button>Add To Cart</button>
+                    <button>
+                        <i class="fa-solid fa-cart-plus"></i>
+                        Add To Cart
+                    </button>
                 </div>
-    
+
                 <div class="product-card">
-                    <img src="images/product4.jpg" alt="">
+                    <img src="images/product4.jpg" alt="" />
                     <div class="rating">⭐⭐⭐⭐ (75)</div>
                     <h3>Sunglasses</h3>
                     <p>₹999</p>
-                    <button>Add To Cart</button>
+                    <button>
+                        <i class="fa-solid fa-cart-plus"></i>
+                        Add To Cart
+                    </button>
                 </div>
-    
+
                 <div class="product-card">
-                    <img src="images/product5.jpg" alt="">
+                    <img src="images/product5.jpg" alt="" />
                     <div class="rating">⭐⭐⭐⭐⭐ (130)</div>
                     <h3>Casual Shoes</h3>
                     <p>₹2499</p>
-                    <button>Add To Cart</button>
+                    <button>
+                        <i class="fa-solid fa-cart-plus"></i>
+                        Add To Cart
+                    </button>
                 </div>
-    
+
                 <div class="product-card">
-                    <img src="images/product6.jpg" alt="">
+                    <img src="images/product6.jpg" alt="" />
                     <div class="rating">⭐⭐⭐⭐⭐ (90)</div>
                     <h3>Travel Bag</h3>
                     <p>₹3499</p>
-                    <button>Add To Cart</button>
+                    <button>
+                        <i class="fa-solid fa-cart-plus"></i>
+                        Add To Cart
+                    </button>
                 </div>
-    
+
                 <div class="product-card">
-                    <img src="images/product7.jpg" alt="">
+                    <img src="images/product7.jpg" alt="" />
                     <div class="rating">⭐⭐⭐⭐⭐ (115)</div>
                     <h3>Women Watch</h3>
                     <p>₹2499</p>
-                    <button>Add To Cart</button>
+                    <button>
+                        <i class="fa-solid fa-cart-plus"></i>
+                        Add To Cart
+                    </button>
                 </div>
-    
+
                 <div class="product-card">
-                    <img src="images/product8.jpg" alt="">
+                    <img src="images/product8.jpg" alt="" />
                     <div class="rating">⭐⭐⭐⭐⭐ (180)</div>
                     <h3>Jeep Classic Hoodie</h3>
                     <p>₹2399</p>
-                    <button>Add To Cart</button>
+                    <button>
+                        <i class="fa-solid fa-cart-plus"></i>
+                        Add To Cart
+                    </button>
                 </div>
-    
-            </div>
-    
-        </div>
-    
-    </section>
 
+                <div class="product-card">
+                    <img src="images/product9.jpg" alt="" />
+                    <div class="rating">⭐⭐⭐⭐ (350)</div>
+                    <h3>Cotton Embrodiery Top </h3>
+                    <p>₹1299</p>
+                    <button>
+                        <i class="fa-solid fa-cart-plus"></i>
+                        Add To Cart
+                    </button>
+                </div>
+
+                <div class="product-card">
+                    <img src="images/product10.jpg" alt="" />
+                    <div class="rating">⭐⭐⭐⭐⭐ (880)</div>
+                    <h3>Baggy Jeans Girls</h3>
+                    <p>₹1999</p>
+                    <button>
+                        <i class="fa-solid fa-cart-plus"></i>
+                        Add To Cart
+                    </button>
+                </div>
+
+                <div class="product-card">
+                    <img src="images/product11.jpg" alt="" />
+                    <div class="rating">⭐⭐⭐⭐⭐ (480)</div>
+                    <h3>Heel for Girls</h3>
+                    <p>₹2699</p>
+                    <button>
+                        <i class="fa-solid fa-cart-plus"></i>
+                        Add To Cart
+                    </button>
+                </div>
+
+            </div>
+        </div>
+        </div>
+
+
+    </section>
 </body>
+
 </html>
