@@ -5,14 +5,6 @@
     font-family: Arial, sans-serif;
 }
 
-/* body {
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: #f8f9fc;
-} */
-
 body {
     min-height: 100vh;
     display: flex;
@@ -70,6 +62,20 @@ body::after {
 
     filter: blur(50px);
 }
+
+.background {
+    position: fixed;
+    inset: 0;
+    z-index: -2;
+
+    background:
+        radial-gradient(circle at 20% 20%, #9dbce0 0%, transparent 40%),
+        radial-gradient(circle at 75% 25%, #f0bfd2 0%, transparent 35%),
+        radial-gradient(circle at 50% 50%, #c7b7dd 0%, transparent 45%),
+        linear-gradient(135deg, #c8d8eb 0%, #d6c8df 45%, #eac1cb 75%, #f3d4cf 100%);
+}
+
+
 
 .container {
     width: 90%;

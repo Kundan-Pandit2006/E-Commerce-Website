@@ -225,6 +225,7 @@ body {
 }
 
 .product-card {
+  position: relative;
   background: white;
   border-radius: 15px;
   overflow: hidden;
@@ -488,4 +489,3 @@ body {
     transform: translateY(-50%);
     color: #777;
 }
-

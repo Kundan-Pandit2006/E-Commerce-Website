@@ -42,22 +42,53 @@ body {
   display: flex;
   list-style: none;
   gap: 25px;
+  font-size: 23px;
 }
 
 .nav-links a {
   text-decoration: none;
-  color: #1f2937;
+  color: black;
   font-weight: 600;
+  padding: 8px 14px;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+}
+
+.nav-links a:hover{
+  color: white;
+    background: linear-gradient(90deg, #5da8ff, #ff78c7);
+  
+    transform: translateY(-2px);
+  
+    box-shadow:
+      0 5px 15px rgba(93, 168, 255, 0.3),
+      0 5px 15px rgba(255, 120, 199, 0.3);
 }
 
 .nav-actions {
   display: flex;
   gap: 20px;
+  font-size: 23px;
 }
 
 .nav-actions a {
   text-decoration: none;
-  color: #1f2937;
+  color: black;
+  font-weight: 600;
+  padding: 8px 14px;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+}
+
+.nav-actions a:hover{
+  color: white;
+    background: linear-gradient(90deg, #5da8ff, #ff78c7);
+  
+    transform: translateY(-2px);
+  
+    box-shadow:
+      0 5px 15px rgba(93, 168, 255, 0.3),
+      0 5px 15px rgba(255, 120, 199, 0.3);
 }
 
 /* Contact Section */
@@ -84,6 +115,7 @@ body {
 .contact-tag {
   color: #7c5cff;
   font-weight: 700;
+  font-size: 30px;
   letter-spacing: 3px;
 }
 
