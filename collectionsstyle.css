@@ -28,91 +28,140 @@ body {
     linear-gradient(135deg, #c8d8eb 0%, #d6c8df 45%, #eac1cb 75%, #f3d4cf 100%);
 }
 
-/* Navbar */
 
 .navbar {
-  width: 90%;
-  max-width: 1400px;
-
-  margin: auto;
+  width: 100%;
+  padding: 25px 70px;
+  box-sizing: border-box;
 
   display: flex;
-  justify-content: space-between;
   align-items: center;
-
-  padding: 25px 0;
 }
 
 .logo {
+  font-size: 30px;
+  font-weight: 700;
+  flex: 1;
+
+  background: linear-gradient(135deg, #150f0a, #0f0f0f, #0f0f0f);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+/* 
+.logo i {
+  color: #7c5cff;
+} */
+
+.logo {
   font-size: 32px;
-  font-weight: bold;
+  font-weight: 700;
+  cursor: pointer;
 }
 
 .logo i {
-  color: #ff6f91;
+  margin-right: 10px;
+  color: #5da8ff;
 }
 
+.logo {
+  transition: all 0.3s ease;
+}
+
+.logo:hover {
+  transform: scale(1.05);
+}
+
+.logo:hover i {
+  color: #ff78c7;
+}
+
+
+
 .nav-links {
-  list-style: none;
-font-size: 19px;
+  flex: 2;
   display: flex;
+  justify-content: center;
   gap: 35px;
+  list-style: none;
+  font-size: 19px;
 }
 
 .nav-links a {
-  text-decoration: none;
-
-  color: #222;
-
-  font-weight: 600;
-
-  transition: 0.3s;
-}
-
-.nav-links a:hover {
-  color: #7c5cff;
-}
-
-.nav-links .active {
-  color: #7c5cff;
   position: relative;
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+  padding: 8px 14px;
+  border-radius: 20px;
+  transition: all 0.3s ease;
 }
 
-.nav-links .active::after {
-  content: "";
+/* Same hover effect as Home page */
+.nav-links a:hover {
+  color: white;
+  background: linear-gradient(90deg, #5da8ff, #ff78c7);
 
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 5px 15px rgba(93, 168, 255, 0.3),
+    0 5px 15px rgba(255, 120, 199, 0.3);
+}
+
+/* Active page text */
+.nav-links a.active {
+  color: black;
+}
+
+/* Underline only for active page */
+.nav-links a.active::after {
+  content: "";
   position: absolute;
 
-  left: 0;
+  left: 50%;
   bottom: -8px;
 
-  width: 100%;
+  transform: translateX(-50%);
+
+  width: 70%;
   height: 3px;
 
-  border-radius: 5px;
+  border-radius: 20px;
 
   background: linear-gradient(90deg, #5da8ff, #ff78c7);
 }
 
 .nav-actions {
+  flex: 1;
   display: flex;
+  justify-content: flex-end;
   gap: 20px;
   font-size: 19px;
 }
 
 .nav-actions a {
   text-decoration: none;
-
-  color: #222;
-
+  color: black;
   font-weight: 600;
-
-  transition: 0.3s;
+  padding: 8px 14px;
+  border-radius: 20px;
+  transition: all 0.3s ease;
 }
 
 .nav-actions a:hover {
-  color: #7c5cff;
+  color: white;
+  background: linear-gradient(90deg, #5da8ff, #ff78c7);
+
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 5px 15px rgba(93, 168, 255, 0.3),
+    0 5px 15px rgba(255, 120, 199, 0.3);
 }
+
 
 /* Hero Section */
 

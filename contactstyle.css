@@ -293,3 +293,27 @@ body {
     justify-content: center;
   }
 }
+
+
+.nav-links a {
+  position: relative;
+  text-decoration: none;
+}
+
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -4px;
+  width: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #5da8ff, #ff78c7);
+  transition: 0.3s;
+  transform: translateX(-50%);
+  border-radius: 20px;
+}
+
+/* Underline only for the active page */
+.nav-links a.active::after {
+  width: 70%;
+}

@@ -14,7 +14,11 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 20px 8%;
-  background: white;
+  background:
+      radial-gradient(circle at 20% 20%, #9dbce0 0%, transparent 40%),
+      radial-gradient(circle at 75% 25%, #f0bfd2 0%, transparent 35%),
+      radial-gradient(circle at 50% 50%, #c7b7dd 0%, transparent 45%),
+      linear-gradient(135deg, #c8d8eb 0%, #d6c8df 45%, #eac1cb 75%, #f3d4cf 100%);
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
@@ -73,7 +77,14 @@ body {
 }
 
 .hero {
-  background: linear-gradient(to right, #cfe8ff, #f6c4da);
+  /* background: linear-gradient(to right, #cfe8ff, #f6c4da); */
+
+  background:
+      radial-gradient(circle at 20% 20%, #9dbce0 0%, transparent 40%),
+      radial-gradient(circle at 75% 25%, #f0bfd2 0%, transparent 35%),
+      radial-gradient(circle at 50% 50%, #c7b7dd 0%, transparent 45%),
+      linear-gradient(135deg, #c8d8eb 0%, #d6c8df 45%, #eac1cb 75%, #f3d4cf 100%);
+
   min-height: 300px;
   display: flex;
   align-items: center;
@@ -488,4 +499,30 @@ body {
     top: 50%;
     transform: translateY(-50%);
     color: #777;
+}
+
+
+
+
+.nav-links a {
+  position: relative;
+  text-decoration: none;
+}
+
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -4px;
+  width: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #5da8ff, #ff78c7);
+  transition: 0.3s;
+  transform: translateX(-50%);
+  border-radius: 20px;
+}
+
+/* Underline only for the active page */
+.nav-links a.active::after {
+  width: 70%;
 }
