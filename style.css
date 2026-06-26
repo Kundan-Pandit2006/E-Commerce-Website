@@ -382,3 +382,67 @@ body {
   color: #ff7a00;
 }
 
+
+
+.services {
+  width: 90%;
+  max-width: 1400px;
+
+  margin: 120px auto 80px;
+
+  display: grid;
+
+  grid-template-columns: repeat(4, 1fr);
+
+  gap: 30px;
+}
+
+.service-box {
+  background: rgba(255, 255, 255, 0.25);
+
+  backdrop-filter: blur(18px);
+
+  border: 1px solid rgba(255, 255, 255, 0.35);
+
+  border-radius: 25px;
+
+  text-align: center;
+
+  padding: 35px 25px;
+
+  transition: 0.35s;
+
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.08);
+}
+
+.service-box:hover {
+  /* transform: translateY(-12px); */
+
+  box-shadow: 0 25px 45px rgba(0, 0, 0, 0.12);
+}
+
+.service-box i {
+  font-size: 42px;
+
+  margin-bottom: 20px;
+
+  background: linear-gradient(90deg, #5da8ff, #ff78c7);
+
+  -webkit-background-clip: text;
+
+  -webkit-text-fill-color: transparent;
+}
+
+.service-box h3 {
+  font-size: 24px;
+
+  margin-bottom: 12px;
+
+  color: #1f2937;
+}
+
+.service-box p {
+  color: #666;
+
+  line-height: 1.6;
+}

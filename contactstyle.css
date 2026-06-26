@@ -42,7 +42,7 @@ body {
   display: flex;
   list-style: none;
   gap: 25px;
-  font-size: 23px;
+  font-size: 19px;
 }
 
 .nav-links a {
@@ -68,7 +68,7 @@ body {
 .nav-actions {
   display: flex;
   gap: 20px;
-  font-size: 23px;
+  font-size: 19px;
 }
 
 .nav-actions a {
