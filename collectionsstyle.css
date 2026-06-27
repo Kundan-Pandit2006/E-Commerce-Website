@@ -224,9 +224,7 @@ body {
   box-shadow: 0 15px 30px rgba(93, 168, 255, 0.35);
 }
 
-/* ===========================
-   Summer Banner
-=========================== */
+   /* Summer Banner */
 
 .offer-card {
   display: flex;
@@ -308,9 +306,8 @@ body {
   transform: scale(1.05);
 }
 
-/* ===========================
-   Shop By Collection
-=========================== */
+   /* Shop By Collection */
+
 
 .collections {
   width: 90%;
@@ -414,13 +411,7 @@ body {
   color: #ff6f91;
 }
 
-/* ===========================
-   Featured Collection
-=========================== */
-
-/* ===========================
-   Featured Collections
-=========================== */
+   /* Featured Collections */
 
 .featured {
   width: 90%;

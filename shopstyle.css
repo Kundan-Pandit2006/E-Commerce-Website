@@ -269,37 +269,6 @@ body {
   font-size: 18px;
 }
 
-/* .product-card button {
-  padding: 10px 50px;
-  border: none;
-  background: #ff6b00;
-  color: white;
-  border-radius: 8px;
-  cursor: pointer;
-  font-size: 19px;
-}
-
-.product-card button {
-  width: 80%;
-  padding: 12px;
-  border: none;
-  color: white;
-  border-radius: 12px;
-  cursor: pointer;
-  background: linear-gradient(90deg, #5da8ff, #ff78c7);
-  transition: all 0.4s ease;
-}
-.product-card button:hover {
-  transform: translateY(-1px) scale(1.06);
-
-  filter: saturate(1.4);
-
-  box-shadow:
-    0 10px 25px rgba(93, 168, 255, 0.45),
-    0 15px 35px rgba(255, 120, 199, 0.45);
-} */
-
-
 
 .wishlist-btn {
   position: absolute;
@@ -367,9 +336,6 @@ body {
     0 10px 25px rgba(93, 168, 255, 0.45),
     0 15px 35px rgba(255, 120, 199, 0.45);
 }
-
-
-
 
 .rating {
   margin: 10px 0;
