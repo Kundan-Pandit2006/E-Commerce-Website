@@ -10,6 +10,7 @@ body {
   color: #111827;
   min-height: 100vh;
   position: relative;
+  padding: top 95px;;
 }
 
 /* Background */
@@ -67,6 +68,8 @@ body {
   display: flex;
   align-items: center;
 }
+
+
 
 .logo {
   font-size: 30px;
